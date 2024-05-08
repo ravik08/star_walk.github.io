@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 60px;
+    height: auto;
+    margin-left: 2%;
+    border-radius: 50%;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: url("stars+3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+main h1{
+    position: absolute;
+}
+
+button{
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: none;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid red;
+    margin-top: 8%;
+    cursor: pointer;
+    transition: 1s;
+}
+button:hover{
+    background: red;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 767px){
+    body{
+        width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    nav img{
+        margin-left: 5%;
+    }
+    main h1{
+        font-size: 20px;
+        margin-top: -10px;
+    }
+    button{
+        width: 120px;
+        margin-top: 23%;
+        font-size: 16px;
+    }
+    footer{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    button{
+        width: 200px;
+        height: auto;
+        font-size: 18px;
+        margin-top: 16%;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    button{
+        margin-top: 12%;
+        width: 200px;
+        font-size: 20px;
+    }
+}
